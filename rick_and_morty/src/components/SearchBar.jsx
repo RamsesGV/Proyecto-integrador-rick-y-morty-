@@ -1,11 +1,17 @@
+import { useState } from "react";
+
 export default function SearchBar({onSearch}) {
 
+   let [id,setId] = useState('')
+
+   const handleChange = (event) => { 
+      setId(event.target.value)
+   }
+
    return (
-      <div className="BotonSearch" style={{
-         padding: '10px'
-      }}>
-         <input style={{borderRadius:'25px'}} type='search' />
-         <button onClick={ (id) => {onSearch(id)}}>Search</button> 
+      <div>
+         <input  type='search' onChange={handleChange} value={id} />
+         <button onClick={() =>{onSearch(id); setId('')}}>Search</button> 
       </div>
    );
 }

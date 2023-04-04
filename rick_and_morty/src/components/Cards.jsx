@@ -1,10 +1,10 @@
 import Card from './Card';
 
-export default function Cards({characters}) {
-   const onClose = () => alert('Emulamos que se cierra la card');
+export default function Cards({characters , onClose}) {
+   
    return (
       <div>
-         {characters.map(({ name,species,gender,image,origin,id,status})=> {
+         {characters.map(({ name,species,gender,image,origin,id,status}) => {
                return(
                   <Card 
                   key={id}
