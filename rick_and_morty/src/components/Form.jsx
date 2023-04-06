@@ -1,11 +1,11 @@
 import React from "react"
 import { useState } from "react"
 import validationF from "./validation"
-const Form = () => { 
+const Form = ({login}) => { 
 
 const [userData, setUserData] = useState({
     email:'',
-    paswordd:''
+    password:''
 })
 
 const handleOnChange = (event) => { 
@@ -24,6 +24,11 @@ setErrors(errors)
 
 }
 
+const handleOnSubmit = (event) =>{ 
+event.preventDefault()
+login(userData)
+}
+
 
 
 
@@ -34,10 +39,10 @@ setErrors(errors)
             {errors.email && <p>{errors.email}</p>}
             <hr/>
             <label htmlFor="password"></label>
-            <input name="paswordd" type="password" placeholder="******" value={userData.paswordd} onChange={handleOnChange}></input>
-            {errors.paswordd && <p>{errors.paswordd}</p>}
+            <input name="password" type="password" placeholder="******" value={userData.password} onChange={handleOnChange}></input>
+            {errors.password && <p>{errors.password}</p>}
             <hr/>
-            <button>Submit</button>
+            <button onClick={handleOnSubmit}>Submit</button>
         </form>
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar"; 
 import { NavLink } from "react-router-dom";
 
-const Nav = ({onSearch}) => { 
+const Nav = ({onSearch, logout} ) => { 
     return( 
 <div>     
     <nav>
@@ -19,6 +19,9 @@ const Nav = ({onSearch}) => {
             <NavLink to='/home'>Home</NavLink>
         </button>
 
+
+
+        <button onClick={logout}>log Out</button>
     </nav>
 
 
