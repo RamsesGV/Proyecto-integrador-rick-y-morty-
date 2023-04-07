@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SearchBar({onSearch}) {
+export default function SearchBar({onSearch,onSearchRandom }) {
 
    let [id,setId] = useState('')
 
@@ -12,6 +12,7 @@ export default function SearchBar({onSearch}) {
       <div>
          <input  type='search' onChange={handleChange} value={id} />
          <button onClick={() =>{onSearch(id); setId('')}}>Search</button> 
+         <button onClick={() => {onSearchRandom()}}>Search Random</button>
       </div>
    );
 }

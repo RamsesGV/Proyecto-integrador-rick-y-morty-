@@ -2,11 +2,12 @@ import React from "react";
 import SearchBar from "./SearchBar"; 
 import { NavLink } from "react-router-dom";
 
-const Nav = ({onSearch, logout} ) => { 
+const Nav = ({onSearch, logout, onSearchRandom} ) => { 
     return( 
 <div>     
     <nav>
-        <SearchBar onSearch={onSearch}></SearchBar>
+        <SearchBar onSearch={onSearch} onSearchRandom={onSearchRandom}></SearchBar>
+        
 
 
         <button>

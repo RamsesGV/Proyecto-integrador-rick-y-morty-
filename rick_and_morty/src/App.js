@@ -16,6 +16,26 @@ function App() {
 
 const [characters,setCharacter] = useState([])
 
+
+const onSearchRandom = () => {
+   console.log('se dio click');
+   const randomId = Math.floor(Math.random() * 826); 
+   axios(`${URL_BASE}/${randomId}?key=${API_KEY}`)
+      .then(response => response.data)
+      .then((data) => {
+         if (data.id) {
+            setCharacter(oldChars => [...oldChars, data]);
+         } else {
+            navigate('/:error');
+         }
+      })
+      .catch(error => {
+         console.log(error);
+         navigate('/:error');
+      });
+};
+
+
 const  onSearch = (id) => {
    axios(`${URL_BASE}/${id}?key=${API_KEY}`)
    .then (response => response.data)
@@ -69,7 +89,7 @@ useEffect(()=>{
 
    return (
       <div className='App'>
-      {showNav && <Nav onSearch={onSearch} logout={logout}></Nav>  }
+      {showNav && <Nav onSearch={onSearch} logout={logout} onSearchRandom={onSearchRandom}></Nav>  }
       <Routes>
       <Route path='/home' element={<Cards characters={characters}  onClose={onClose}/>} />
       <Route path='/about' element={<About/>} />
