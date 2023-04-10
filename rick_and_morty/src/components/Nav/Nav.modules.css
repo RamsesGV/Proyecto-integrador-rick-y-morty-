@@ -1,0 +1,201 @@
+
+@font-face { 
+    font-family: 'RickAndMorty'; 
+    src: url('./fonts/get_schwifty.ttf')
+}
+
+
+.nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(8,22,0,1) 0%, rgba(22,230,5,1) 99%, rgba(66,237,8,1) 100%, rgba(4,255,0,1) 100%);
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.about {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+}
+
+.about:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0; /* Añadido */
+    left: 0; /* Añadido */
+    z-index: -1; /* Cambiado */
+    border-radius: 10px; /* Ajustado */
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -3px -3px 10px 0px #fff9,
+    -2px -2px 2px 0px #fff9,
+    3px 3px 10px 0px #0002,
+    2px 2px 2px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.about:hover {
+    color: #fff;
+}
+
+.about:hover:after {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    box-shadow:
+    -5px -5px 15px 0px #fff9,
+    -2px -2px 5px 0px #fff9,
+    5px 5px 15px 0px #0002,
+    2px 2px 5px 0px #0001;
+}
+
+.about:active {
+    top: 2px;
+}
+
+.linka { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    ;
+
+}
+
+.home { 
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+}
+
+.home:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0; /* Añadido */
+    left: 0; /* Añadido */
+    z-index: -1; /* Cambiado */
+    border-radius: 10px; /* Ajustado */
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -3px -3px 10px 0px #fff9,
+    -2px -2px 2px 0px #fff9,
+    3px 3px 10px 0px #0002,
+    2px 2px 2px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.home:hover {
+    color: #fff;
+}
+
+.home:hover:after {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    box-shadow:
+    -5px -5px 15px 0px #fff9,
+    -2px -2px 5px 0px #fff9,
+    5px 5px 15px 0px #0002,
+    2px 2px 5px 0px #0001;
+}
+
+.home:active {
+    top: 2px;
+}
+
+.linkh { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    
+
+}
+
+.logout { 
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+}
+
+.logout:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0; /* Añadido */
+    left: 0; /* Añadido */
+    z-index: -1; /* Cambiado */
+    border-radius: 10px; /* Ajustado */
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -3px -3px 10px 0px #fff9,
+    -2px -2px 2px 0px #fff9,
+    3px 3px 10px 0px #0002,
+    2px 2px 2px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+
+
+.logout:hover:after {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    box-shadow:
+    -5px -5px 15px 0px #fff9,
+    -2px -2px 5px 0px #fff9,
+    5px 5px 15px 0px #0002,
+    2px 2px 5px 0px #0001;
+}
+
+.logout:active {
+    top: 2px;
+}
+.logout { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}

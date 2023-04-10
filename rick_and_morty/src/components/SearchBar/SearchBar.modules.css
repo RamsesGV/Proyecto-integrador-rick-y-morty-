@@ -1,0 +1,145 @@
+.buttonS { 
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+}
+
+.buttonS:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0; /* Añadido */
+    left: 0; /* Añadido */
+    z-index: -1; /* Cambiado */
+    border-radius: 10px; /* Ajustado */
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -3px -3px 10px 0px #fff9,
+    -2px -2px 2px 0px #fff9,
+    3px 3px 10px 0px #0002,
+    2px 2px 2px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.buttonS:hover:after {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    box-shadow:
+    -5px -5px 15px 0px #fff9,
+    -2px -2px 5px 0px #fff9,
+    5px 5px 15px 0px #0002,
+    2px 2px 5px 0px #0001;
+}
+
+.buttonS:active {
+    top: 2px;
+}
+.buttonS { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+
+
+.buttonR { 
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+    
+}
+
+.buttonR:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0; /* Añadido */
+    left: 0; /* Añadido */
+    z-index: -1; /* Cambiado */
+    border-radius: 10px; /* Ajustado */
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -3px -3px 10px 0px #fff9,
+    -2px -2px 2px 0px #fff9,
+    3px 3px 10px 0px #0002,
+    2px 2px 2px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.buttonR:hover:after {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 20px;
+    box-shadow:
+    -5px -5px 15px 0px #fff9,
+    -2px -2px 5px 0px #fff9,
+    5px 5px 15px 0px #0002,
+    2px 2px 5px 0px #0001;
+}
+
+.buttonR:active {
+    top: 2px;
+}
+.buttonR { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.inputS { 
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    position: relative; /* Añadido */
+    border-radius: 10px; /* Ajustado */
+
+}
+
+.inputS { 
+    font-family: 'RickAndMorty';
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+

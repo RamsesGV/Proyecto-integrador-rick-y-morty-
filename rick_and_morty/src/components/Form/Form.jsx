@@ -1,6 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import validationF from "./validation"
+import validationF from "../Validation/validation"
 const Form = ({login}) => { 
 
 const [userData, setUserData] = useState({
@@ -34,11 +34,11 @@ login(userData)
 
     return(
         <form>
-            <label htmlFor="email"></label>
+            <label htmlFor="email">Email: </label>
             <input name="email" type="email" placeholder="Example@email.com" value={userData.email} onChange={handleOnChange}></input>
             {errors.email && <p>{errors.email}</p>}
             <hr/>
-            <label htmlFor="password"></label>
+            <label htmlFor="password">Password: </label>
             <input name="password" type="password" placeholder="******" value={userData.password} onChange={handleOnChange}></input>
             {errors.password && <p>{errors.password}</p>}
             <hr/>

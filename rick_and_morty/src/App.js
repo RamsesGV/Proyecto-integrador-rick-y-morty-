@@ -1,13 +1,13 @@
 import './App.css';
-import Cards from './components/Cards.jsx';
-import Nav from './components/Nav.jsx';
+import Cards from './components/Cards/Cards.jsx';
+import Nav from './components/Nav/Nav.jsx';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Routes, Route, useLocation, useNavigate, } from 'react-router-dom';
-import About from './components/About';
-import Detail from './components/Detail';
-import Form from './components/Form';
-import Error from './components/Error';
+import About from './components/About/About';
+import Detail from './components/Detail/Detail';
+import Form from './components/Form/Form';
+import Error from './components/Error/Error';
 
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
 const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
@@ -89,6 +89,7 @@ useEffect(()=>{
 
    return (
       <div className='App'>
+      <div className='space'> 
       {showNav && <Nav onSearch={onSearch} logout={logout} onSearchRandom={onSearchRandom}></Nav>  }
       <Routes>
       <Route path='/home' element={<Cards characters={characters}  onClose={onClose}/>} />
@@ -97,6 +98,7 @@ useEffect(()=>{
       <Route path='/' element={<Form login={login}/>} />
       <Route path='/:error' element={<Error/>} /> 
       </Routes>
+      </div>
       </div>
    );
 }
