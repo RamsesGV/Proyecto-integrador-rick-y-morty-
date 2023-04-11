@@ -89,7 +89,7 @@ useEffect(()=>{
 
    return (
       <div className='App'>
-      <div className='space'> 
+
       {showNav && <Nav onSearch={onSearch} logout={logout} onSearchRandom={onSearchRandom}></Nav>  }
       <Routes>
       <Route path='/home' element={<Cards characters={characters}  onClose={onClose}/>} />
@@ -98,7 +98,7 @@ useEffect(()=>{
       <Route path='/' element={<Form login={login}/>} />
       <Route path='/:error' element={<Error/>} /> 
       </Routes>
-      </div>
+      
       </div>
    );
 }

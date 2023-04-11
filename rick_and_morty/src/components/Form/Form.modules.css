@@ -1,0 +1,100 @@
+
+@font-face { 
+    font-family: 'RickAndMorty'; 
+    src: url('./fonts/get_schwifty.ttf')
+}
+
+.labelEmail { 
+    font-family: 'RickAndMorty';
+    
+    font-size: 20px;
+    color:rgb(16, 207, 10);
+    text-align: center;
+    margin-bottom: 10px;
+
+    
+}
+
+.labelPassword { 
+    font-family: 'RickAndMorty' ;
+    color:rgb(16, 207, 10)
+    
+}
+
+.inputEmail { 
+    font-family: 'RickAndMorty';
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: rgb(2,36,0);
+background: linear-gradient(90deg, rgba(2,36,0,1) 0%, rgba(11,121,9,1) 36%, rgba(8,231,18,1) 100%);
+    border-radius: 50px;
+}
+
+.inputPassword { 
+    font-family: 'RickAndMorty';
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: rgb(2,36,0);
+background: linear-gradient(90deg, rgba(2,36,0,1) 0%, rgba(11,121,9,1) 36%, rgba(8,231,18,1) 100%);
+    border-radius: 50px;
+}
+.buttonSubmit{
+    font-family: 'RickAndMorty';
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: rgb(2,36,0);
+background: linear-gradient(90deg, rgba(2,36,0,1) 0%, rgba(11,121,9,1) 36%, rgba(8,231,18,1) 100%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form-container { 
+    width: 80%;
+    max-width: 600px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-image: url('https://imgur.com/HakCEDi.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.page-container{
+    
+    
+        background-color: black;
+        height: 100vh;
+    }
+    
+    .hr1 {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .hr2 { 
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .errorE{
+        color: red;
+        font-family: 'RickAndMorty';
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .errorP{
+        color: red;
+        font-family: 'RickAndMorty';
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
