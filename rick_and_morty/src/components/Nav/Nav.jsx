@@ -7,6 +7,9 @@ const Nav = ({onSearch, logout, onSearchRandom} ) => {
     return( 
 <div>     
     <nav className='nav'>
+
+
+
         <SearchBar onSearch={onSearch} onSearchRandom={onSearchRandom}></SearchBar>
         
 
@@ -19,6 +22,10 @@ const Nav = ({onSearch, logout, onSearchRandom} ) => {
 
         <button className='home'>
             <NavLink to='/home' className='linkh'>Home</NavLink>
+        </button>
+
+        <button className='favorites'>
+            <NavLink to='/favorites' className='linkf'>Favorites</NavLink>
         </button>
 
 

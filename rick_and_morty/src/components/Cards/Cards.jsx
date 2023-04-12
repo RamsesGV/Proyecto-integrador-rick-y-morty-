@@ -1,9 +1,9 @@
 import Card from '../Card/Card';
-
+import './Cards.modules.css'
 export default function Cards({characters , onClose}) {
    
    return (
-      <div>
+      <div className='divC'>
          {characters.map(({ name,species,gender,image,origin,id,status}) => {
                return(
                   <Card 

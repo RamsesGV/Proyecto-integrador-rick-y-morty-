@@ -46,6 +46,8 @@ background: linear-gradient(90deg, rgba(2,36,0,1) 0%, rgba(11,121,9,1) 36%, rgba
 }
 
 .form-container { 
+    position: relative;
+    z-index: 1;
     width: 80%;
     max-width: 600px;
     height: 800px;
