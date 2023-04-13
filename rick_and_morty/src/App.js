@@ -10,6 +10,7 @@ import Form from './components/Form/Form';
 import Error from './components/Error/Error';
 import Favorites from './components/Favorites/Favorites';
 
+
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
 const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
 
@@ -88,10 +89,22 @@ useEffect(()=>{
 },[access])
 
 
+
+
+const [cometa, setCometa] = useState(false)
+
+const handleMouseMove = (e) => {
+   const { clientX, clientY } = e;
+   setCometa({ x: clientX, y: clientY });
+};
+
+
    return (
       
       <div className='App'>
       
+      
+
       {showNav && <Nav onSearch={onSearch} logout={logout} onSearchRandom={onSearchRandom}></Nav>  }
       <Routes>
       <Route path='/home' element={<Cards characters={characters}  onClose={onClose}/>} />
@@ -101,6 +114,7 @@ useEffect(()=>{
       <Route path='/:error' element={<Error/>} /> 
       <Route path='/favorites' element={<Favorites/>}/> 
       </Routes>
+      
       <div className='space'></div>
       </div>
    );

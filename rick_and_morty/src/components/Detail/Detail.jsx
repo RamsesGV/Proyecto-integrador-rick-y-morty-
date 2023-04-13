@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+import './Detail.modules.css'
 
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
 const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
@@ -26,9 +27,9 @@ useEffect(() => {
     
     return(
         
-        <div> 
-            <h1>{character.name}</h1>
-            <img src={character.image} alt={character.name} />
+        <div className="detail"> 
+            <h1 className="h1">{character.name}</h1>
+            <img className="imgD" src={character.image} alt={character.name} />
             <p>{character.status ? `Status: ${character.status}` : null}</p>
             <p>{character.species ? `Species: ${character.species}` : null}</p>
             <p>{character.gender ? `Gender: ${character.gender}` : null}</p>

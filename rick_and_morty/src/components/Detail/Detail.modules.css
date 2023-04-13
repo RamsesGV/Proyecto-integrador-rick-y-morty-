@@ -1,0 +1,86 @@
+@font-face { 
+    font-family: 'RickAndMorty'; 
+    src: url('./fonts/get_schwifty.ttf')
+}
+
+
+
+.detail{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    
+}
+.h1{ 
+    font-size: 6rem;
+    font-weight: 700;
+    color: #00ff00;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-family: 'RickAndMorty';
+    animation: move 1s ease-in-out infinite alternate;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    box-shadow: none;
+}
+.h1:hover {
+  color: #00ff00;
+  text-shadow: 0px 0px 10px #00ff00;
+}
+
+@keyframes move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  
+  .imgD {
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .imgD:hover {
+    transform: rotate(3deg) translateX(2px) translateY(2px);
+    box-shadow: 0px 0px 10px #00ff00;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(3deg);
+    }
+    40% {
+      transform: rotate(-3deg);
+    }
+    60% {
+      transform: rotate(2deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  p { 
+    font-size: 4rem;
+    font-weight: 700;
+    color: #00ff00;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-family: 'RickAndMorty';
+    animation: move 1s ease-in-out infinite alternate;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    box-shadow: none;
+    text-shadow: 0px 0px 10px #00ff00;
+  }

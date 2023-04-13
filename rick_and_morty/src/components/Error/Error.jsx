@@ -5,10 +5,13 @@ const Error = () => {
     console.log('estoy en la ruta');
 return(
     <div>
-        <h1 className="Errorh1">ERROR 404 EN CONSTRUCCION...</h1>
-        <NavLink to='/home'>
+        <h1 className="Errorh1">ERROR 404</h1>
+    
+     <iframe className="gif" allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/5pUszK9PTZhrlToanq/video" width="480"></iframe>
+
+<NavLink to='/home'>
         <button className="buttonHE"> Back to home.</button>
-        </NavLink>
+</NavLink>
     </div>
 )
 }

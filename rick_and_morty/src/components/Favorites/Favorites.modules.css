@@ -1,0 +1,57 @@
+
+body { 
+    position: relative;
+}
+
+
+
+.select1 { 
+    position: absolute;
+    z-index: 1;
+    left:10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #00ff00;
+    
+    
+    
+}
+
+.select2{
+    position: relative;
+    z-index: 1;
+    left: 800px;
+    padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #00ff00;
+}
+
+.select1:focus, .select2:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  
+  
+  .select1:active, .select2:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+
+  .select1 option, .select2 option {
+    background-color: #000000;
+    color: #00ff00;
+  }

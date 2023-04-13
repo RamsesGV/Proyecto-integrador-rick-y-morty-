@@ -52,20 +52,23 @@ function Card({name,species,gender,image,onClose,origin,id,status,addFavorite,re
          ? (
             <button className="favButton" onClick={handleFavorite}>❤️</button>
          ) : (
-            <button onClick={handleFavorite}>🤍</button>
+            <button className="favButton2" onClick={handleFavorite}>🤍</button>
          )
 } 
 {
          location.pathname !== '/favorites' &&
-         <button onClick={() => onClose(id)}>X</button>
+         <button className="xbutton" onClick={() => onClose(id)}>X</button>
 }         
          
-         <NavLink to={`/detail/${id}`}> 
-         <h2>Name: {name}</h2>
-         </NavLink>
-         <h2>ID: {id}</h2>
-         <img src={image} alt={'Character'} /> 
          
+         <h2 className="nameD">Name: {name}</h2>
+         
+
+         <h2 className="id">ID: {id}</h2>
+
+         <NavLink style={{textDecoration:'none'}} to={`/detail/${id}`}>
+         <img src={image} alt={'Character'} /> 
+         </NavLink>
       </div>
    );
 }

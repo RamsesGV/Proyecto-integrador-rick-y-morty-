@@ -1,29 +1,159 @@
+@font-face { 
+    font-family: 'RickAndMorty'; 
+    src: url('./fonts/get_schwifty.ttf')
+}
+
 .cardContainer { 
-        position: relative;
-        z-index: 1;
-        display: inline-block;
-        width: 250px;
-        height: 350px;
-        background-color: green;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-        overflow: hidden;
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color: rgba(0, 128, 0, 0.5); /* Green transparent background with 50% opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-size: 40px 40px;
     }
     
     .cardContainer img {
         width: 100%;
-        height: 70%;
+        height: 100%;
         object-fit: cover;
+        border-radius: 5px;
+        
+        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00, 0 0 1px #00ff00;
     }
+   
     
     .cardContainer h2 {
         margin: 10px;
     }
     .cardContainer:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00, 0 0 80px #00ff00;
+    }
+
+.nameD{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'RickAndMorty';
+    }
+    
+    .id { 
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        margin: 10px;
+        text-decoration: none;
+        font-family: 'RickAndMorty';
+    }
+    
+.favButton{ 
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+    
+    .favButton:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .favButton img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+    
+    .favButton.active {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    
+    .favButton.active:hover {
+        background-color: rgba(255, 0, 0, 1);
+}
+
+.favButton2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+    
+    .favButton2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .favButton2 img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+    
+    .favButton2.active {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    
+    .favButton2.active:hover {
+        background-color: rgba(255, 0, 0, 1);
+}
+
+.xbutton{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+    
+    .xbutton:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .xbutton img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+    
+    .xbutton.active {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    
+    .xbutton.active:hover {
+        background-color: rgba(255, 0, 0, 1);
     }
