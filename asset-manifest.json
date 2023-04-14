@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Proyecto-integrador-rick-y-morty-/static/css/main.f3690949.css",
+    "main.js": "/Proyecto-integrador-rick-y-morty-/static/js/main.5c3699e1.js",
+    "static/media/get_schwifty.ttf": "/Proyecto-integrador-rick-y-morty-/static/media/get_schwifty.c3d1dfc692e3547fed16.ttf",
+    "index.html": "/Proyecto-integrador-rick-y-morty-/index.html",
+    "main.f3690949.css.map": "/Proyecto-integrador-rick-y-morty-/static/css/main.f3690949.css.map",
+    "main.5c3699e1.js.map": "/Proyecto-integrador-rick-y-morty-/static/js/main.5c3699e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3690949.css",
+    "static/js/main.5c3699e1.js"
+  ]
+}
