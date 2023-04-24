@@ -70,13 +70,17 @@ const navigate = useNavigate()
 
 const[access,setAccess] = useState(false)
 const EMAIL = 'ramses@gmail.com' 
-const PASSWORD = 'ramses1'
+const PASSWORD = 'ramses123'
 
 const login = (userData) => {
-   if(EMAIL === userData.email && PASSWORD === userData.password) { 
-      setAccess(true)
-      navigate('/home')
-   }
+   const { email, password } = userData;
+   const URL = 'http://localhost:3001/rickandmorty/login/';
+   axios(URL + `?email=${email}&password=${password}`)
+   .then(({ data }) => {
+      const { access } = data;
+      setAccess(access);
+      access && navigate('/home');
+   });
 }
 
 const logout = () => { 

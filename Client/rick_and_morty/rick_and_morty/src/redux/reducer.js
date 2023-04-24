@@ -10,16 +10,18 @@ switch(action.type) {
 
     case ADD_FAVORITE: 
     return{...state, 
-        myFavorites:[...state.allCharacters, action.payload],
-        allCharacters:[...state.allCharacters,action.payload]
+        myFavorites:action.payload, 
+        allCharacters:action.payload
     }
 
 
-    case REMOVE_FAVORITE: 
-    return{...state, 
-        myFavorites: state.myFavorites.filter(char => char.id !== action.payload),
-        allCharacters: state.allCharacters.filter(char => char.id !== action.payload)
-    }
+    case REMOVE_FAVORITE:
+        return {
+            ...state,
+            myFavorites: action.payload,
+            allCharacters: action.payload
+        }
+
     
     case FILTER:
     const filteredCharacters = state.allCharacters.filter(character => character.gender === action.payload);
