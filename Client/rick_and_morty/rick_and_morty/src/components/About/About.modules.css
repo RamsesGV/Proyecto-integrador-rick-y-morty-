@@ -1,0 +1,44 @@
+@font-face { 
+    font-family: 'RickAndMorty'; 
+    src: url('../Card/fonts/get_schwifty.ttf')
+}
+
+.h1ab{ 
+    color: white;
+    animation: move 2s ease-in-out infinite alternate;
+font-family: 'RickAndMorty';
+
+
+}
+@keyframes move {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+    }
+
+
+.h2ab{ 
+    color: white;
+    animation: move 2s ease-in-out infinite alternate;
+    font-family: 'RickAndMorty';
+
+}
+
+.h3ab{ 
+    color: white;
+    animation: move 2s ease-in-out infinite alternate;
+    font-family: 'RickAndMorty';
+    
+
+}
+
+.imgab{
+    border-radius: 50%;
+    animation: move 1s ease-in-out infinite alternate;
+
+}
+
+

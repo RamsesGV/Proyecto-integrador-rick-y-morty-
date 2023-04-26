@@ -9,6 +9,7 @@ import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
 import Error from './components/Error/Error';
 import Favorites from './components/Favorites/Favorites';
+import Audio from './components/audio/audio';
 
 
 //const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
@@ -103,7 +104,7 @@ useEffect(()=>{
       <div className='App'>
       
       
-
+      <Audio className='audio'/>
       {showNav && <Nav onSearch={onSearch} logout={logout} onSearchRandom={onSearchRandom}></Nav>  }
       <Routes>
       <Route path='/home' element={<Cards characters={characters}  onClose={onClose}/>} />

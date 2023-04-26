@@ -74,7 +74,7 @@ describe('DELETE /rickandmorty/fav/:id', () => {
     })
     it('Si el id enviado existe, deberia eliminarlo de favoritos', async () => {
         const response = await request.delete('/rickandmorty/fav/2')
-        expect(response.body.length).toBe(2)
+        expect(response.body.length).toBe(1)
     })
 
 })

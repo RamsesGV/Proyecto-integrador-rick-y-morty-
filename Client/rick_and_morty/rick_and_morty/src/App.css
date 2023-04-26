@@ -1,6 +1,9 @@
 .App {
    text-align: center;
-   margin:0; overflow:hidden;}
+   margin:0; overflow:hidden;
+   cursor: url('./img/pngimg.com\ -\ rick_morty_PNG29.png'), auto;
+}
+
 
 
 
@@ -23,8 +26,14 @@ html {
 
 body {
    background-color: #111;
-   height: 100%;
+   
+
+   
+   
+   
 }
+
+
 
  /* Space */
 
