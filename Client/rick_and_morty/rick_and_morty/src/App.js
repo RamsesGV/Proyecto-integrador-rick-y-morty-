@@ -11,8 +11,8 @@ import Error from './components/Error/Error';
 import Favorites from './components/Favorites/Favorites';
 
 
-const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
-const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
+//const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
+//const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
 
 function App() {
 
@@ -22,7 +22,7 @@ const [characters,setCharacter] = useState([])
 const onSearchRandom = () => {
    console.log('se dio click');
    const randomId = Math.floor(Math.random() * 826); 
-   axios(`${URL_BASE}/${randomId}?key=${API_KEY}`)
+   axios(`http://localhost:3001/rickandmorty/character/${randomId}`)
       .then(response => response.data)
       .then((data) => {
          if (data.id) {
