@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Proyecto-integrador-rick-y-morty-/static/css/main.f3690949.css",
-    "main.js": "/Proyecto-integrador-rick-y-morty-/static/js/main.5c3699e1.js",
+    "main.css": "/Proyecto-integrador-rick-y-morty-/static/css/main.9c8c346d.css",
+    "main.js": "/Proyecto-integrador-rick-y-morty-/static/js/main.0dd832ef.js",
+    "static/media/Rick and Morty - Evil Morty Theme Song (Feewet Trap Remix)-[onlinevideoconverter (mp3cut.net).mp3": "/Proyecto-integrador-rick-y-morty-/static/media/Rick and Morty - Evil Morty Theme Song (Feewet Trap Remix)-[onlinevideoconverter (mp3cut.net).e6a0b41ba5b96a3764e0.mp3",
     "static/media/get_schwifty.ttf": "/Proyecto-integrador-rick-y-morty-/static/media/get_schwifty.c3d1dfc692e3547fed16.ttf",
     "index.html": "/Proyecto-integrador-rick-y-morty-/index.html",
-    "main.f3690949.css.map": "/Proyecto-integrador-rick-y-morty-/static/css/main.f3690949.css.map",
-    "main.5c3699e1.js.map": "/Proyecto-integrador-rick-y-morty-/static/js/main.5c3699e1.js.map"
+    "main.9c8c346d.css.map": "/Proyecto-integrador-rick-y-morty-/static/css/main.9c8c346d.css.map",
+    "main.0dd832ef.js.map": "/Proyecto-integrador-rick-y-morty-/static/js/main.0dd832ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3690949.css",
-    "static/js/main.5c3699e1.js"
+    "static/css/main.9c8c346d.css",
+    "static/js/main.0dd832ef.js"
   ]
 }
