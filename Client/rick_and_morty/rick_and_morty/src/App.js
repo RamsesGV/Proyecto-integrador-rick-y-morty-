@@ -12,8 +12,7 @@ import Favorites from './components/Favorites/Favorites';
 import Audio from './components/audio/audio';
 
 
-//const URL_BASE = 'https://be-a-rym.up.railway.app/api/character'
-//const API_KEY = '40985a843964.676b0d39d16108d6a9e0'
+
 
 function App() {
 
